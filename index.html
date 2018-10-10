@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Подсказки</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id='app'>
+			<input v-on:keyup="getmes" v-model="mes">
+			<div v-for='post in posts'>
+				<p v-on:click="setmes">{{ post.name }}</p>
+			</div>
+		</div>
+		<script src="./dist/main.js"></script>
+	</body>
+</html>
